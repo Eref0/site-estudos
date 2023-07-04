@@ -36,10 +36,40 @@
             <p class="texto-paragrafo-u">Para corrigir isto basta que adicionemos parenteses ( ), olha como fica</p>
             <img class="img-ex" src="./src/img/ex-img-equacao-4.png">
             <p class="texto-paragrafo-u">Desta forma o computador/programa vai entender que a prioridade é a somatória e vai executar a fórmula de maneira correta.</p>
-            <p class="texto-paragrafo-p">Existe ainda uma forma de armazenamento de dados nos computadores, que possibilita a reutilização destes dados no código de forma mais prática. Uma maneira de efetuarmos este armazenamento é através das variaveis. A versatilidade das variaveis é tamanha que podemos configurar equações complexas e até mesmo criarmos fórmulas com elas, de maneira que consigamos obter os resultados esperados e solucionar os problemas.</p>
+            <p class="texto-paragrafo-p">Existe ainda uma forma de armazenamento de dados nos computadores, que possibilita a reutilização destes dados no código de forma mais prática. Uma maneira de efetuarmos este armazenamento é através das variáveis. A versatilidade das variáveis é tamanha que podemos configurar equações complexas e até mesmo criarmos fórmulas com elas, de maneira que consigamos obter os resultados esperados e solucionar os problemas.</p>
+            <p class="texto-paragrafo-p">Para utilizar uma variável você pode criar um script utilizando o comando "< scrip > < /script >" e adicionando o comando "var" seguido do nome que você deseja dar a essa variável do sinal de igualdade e do valor que a variável terá. Observe um exemplo:</p>
+            <li class="texto-paragrafo-p"> <b>Ex. Variável de peso:</b> < script > var peso = 30 < /script >.
+             Assim teremos o peso 30 armazenado na nossa variável. </li>
+            <p class="texto-paragrafo-p">Desta forma podemos utilizar a variável "peso" sem a necessidade de escrever o peso novamente. Além disto as variáveis podem ser utilizadas para criação de cálculos e fórmulas mais complexas, dando a possibilidade da criação de calculadoras e também da composição de algorítmos mais elaborados.</p>
+            <h4 class="texto-paragrafo-h4">Tipos de dados</h4>
+            <p class="texto-paragrafo-p">Na programação podemos utilizar diferentes tipos de dados. A variável acima que vimos utiliza dados numéricos, mas em totalidade existem outros tipos de dados. Vamos ver alguns deles:</p>
+            <li class="texto-paragrafo-p"><b>Dados booleanos:</b> os dados booleanos sempre retornarão uma afirmativa, ou seja, dirão se um determinado intervalo é verdadeiro (true) ou falso (false). A utilização dos dados booleanos nos permite executar determinada ações a depender da veracidade de um intervalo, ou seja, permite que o programa tome uma decisão dependendo das ações, ou condições, precedentes. E isto é extremamente interessante para a programação pois possibilita a criação de um código mais limpo mesmo que tenha uma complexidade grande.</li>
+            <li class="texto-paragrafo-p"><b>Números inteiros:</b> Estes são os números sem fração, como por exemplo 1, 2, 3, 4...</li>
+            <li class="texto-paragrafo-p"><b>Números fracionários:</b> São constituídos dos números acrescids de ponto, como por exemplo 1.2, 1.1, 1.3, 3.1, ...</li>
+            <li class="texto-paragrafo-p"><b>Texto:</b> E o texto que é constituído por todo e qualquer texto que você queira utilizar como dado.</li>
+            <h4 class="texto-paragrafo-h4">Comparações de valores</h4>
+            <p class="texto-paragrafo-p">Dentro de um código podemos realizar comparações de valores, que nada mais são do que operações matemáticas que o computador consegue ler e exercer uma comparação para retornar um valor booleano, por exemplo, ou para acrescer algo. Vejamos quais são os comparadores na tabela abaixo:</p>
+            <img class="img-ex" src="./src/img/ex-img-comparacoes-1.png">
+            <p class="texto-paragrafo-p">A tabela acima nos dá os comandos que devemos utilizar para realizar uma comparação. Note que os comandos diferem um pouco dos comandos que utilizamos na matemáticas por exemplo. É importante utilizar estes comandos da forma correta, de outra forma o computador será incapaz de lê-los e dar seguimento a comparação desejada. <br>Para realizar uma comparação nós precisamos apenas de uma váriavel, comparador e outra variável. Observe:</p>
+            <li class="texto-paragrafo-p"><b>Ex. comparações entre números:</b> para o exemplo utilizaremos números, vamos comparar a sua grandeza. Desta forma temos:</li>
+            <p class="quebra-de-linha"> 15 < 22 = true </p>
+            <p class="texto-paragrafo-p">Desta forma podemos notar que o retorno da operação é o valor booleano "true", isto se dá pois o valor de 15 é inferior ao valor 22. Podemos também comparar textos, mas neste caso estaremos comparando a igualdade e diferença deles. Para compararmos o valor de um texto temos que adicionar uma variável para determinar o seu valor, sendo assim um processo possível e útil porém mais elaborado. Podemos ainda comparar operadores booleanos, mas para isso precisamos utilizar alguns operadores especiais que nos possibilitam estas comparações e estes operadores são:</p>
+            <img class="img-ex" src="./src/img/operadores-booleanos.png">
+            <p class="texto-paragrafo-p">O operador || tem uma dominância do operador "true", desta forma todas as comparações entre true e false que contiverem um valor verdadeiro (true) irão ser dadas como verdadeiras. Veja como fica:</p>
+            <p class="texto-paragrafo-u">false || false = false <br> true || false = true <br> false || true = true <br> true || true = true </p>
+            <p class="texto-paragrafo-p">Já em contrapartida do operador ||, o operador && irá retornar false sempre que um valor for falso. Ou seja, só retornará true quando TODOS os valores operados forem verdadeiros. Veja como fica:</p>
+            <p class="texto-paragrafo-u"> false && false = false <br> true && false = false <br> false && true = false <br> true && true = true </p>
+            <p class="texto-paragrafo-p">Vale ressaltar que a operador && tem prioridade sobre o ||, então em uma comparação onde se utiliza || e && o operador && será processado antes que os operadores ||. Mas é possível forçar a precedência do || utilizando ( ) para isso. Veja abaixo:</p>
+            <img class="img-ex" src="./src/img/operadores-booleanos-forcar.png">
+            <p class="texto-paragrafo-p">Já o operador ! tem como função apenar exercer a inversão da lógica, ou seja, se o resultado seria "true" com o ! ele responde "false" e vice versa. Podemos inverter comparações numéricas também, por exemplo:</p>
+            <p class="texto-paragrafo-u"> !(10<20) = false </p>
+            <p class="texto-paragrafo-p">Desta forma teremos o inverso, acusando que o número 10 não é menor que 20. Este detalhe pode ser muito útil ao criarmos estruturas de decisão, pois poderemos induzir o computador a ler trechos do código com inversão lógica, possibilitando a criação de maiores tomadas de decisão dentro dos nossos códigos.</p>
+            <p class="texto-paragrafo-p">Os comparadores são a base das <b>estruturas de decisão</b>, isto significa que é através dos operadores de comparação lógica que é possível criar as tomadas de decisão dos programas. Estas toamdas de decisão possibilitam que o programa se torne mais autônomo e passe a impressão de inteligência quando seu código for bem elaborado.</p>
+
+
 
             <!--
-                AULA 2-3 LÓGICA
+                AULA 3-1 LÓGICA
             -->
 
 

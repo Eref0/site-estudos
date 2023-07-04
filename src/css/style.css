@@ -82,3 +82,10 @@ main {
     transform:translateX(-50%);
     padding-bottom: 1%;
 }
+.quebra-de-linha {
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0% 1% 0% 2%;
+}
